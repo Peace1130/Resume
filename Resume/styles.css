@@ -1,0 +1,200 @@
+
+.footer{
+text-align:center;
+padding:10px;
+/* background-color:#ddd; */
+}
+
+/* table::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 0, 0.8);
+    border-radius: 50%;
+    position: absolute;
+    animation: orbit 5s linear infinite;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+  } */
+
+table{
+width:100%;
+border:1px solid black;
+border-collapse: collapse;
+box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+animation: glowing 2s infinite;
+position: relative;
+}
+dt{
+font-weight:bold;
+font-size:1.2em;
+}
+section{
+padding:10px;
+border:1px solid black;
+margin:10px;
+}
+table, th, td{
+            border: 1px solid black;
+}
+
+@keyframes orbit {
+    0% {
+      transform: translate(0, -100px);
+    }
+    100% {
+      transform: translate(0, -100px) rotate(360deg);
+    }
+  }
+
+@keyframes glowing {
+    0% {
+      box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(0, 0, 255, 0.8);
+    }
+    100% {
+      box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+    }
+
+
+}
+    .frame{
+        width: 150px;
+        height: 150px;
+        border-radius: 50px;
+        overflow: hidden;
+        border: 2px solid #000;
+        position:left;
+    }
+
+    .frame img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+   
+
+/* Style for the navbar */
+.navbar {
+    background-color: #333; /* Background color of the navbar */
+    overflow: hidden;
+  }
+  
+  /* Style for the navigation list */
+  .nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Style for the navigation items */
+  .nav-item {
+    margin: 0 20px;
+  }
+  
+  /* Style for the links in the navigation items */
+  .nav-item a {
+    text-decoration: none;
+    color: #fff; /* Link text color */
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav-item a:hover {
+    color: #ff4500; /* Hover color for links */
+  }
+
+
+  /* Add this CSS in a separate file (styles.css) or within a <style> tag in your HTML document */
+
+/* Style for the cover */
+.cover {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* 100% of the viewport height */
+    overflow: hidden;
+  }
+  
+  /* Style for the background image */
+  .background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Puts the background image behind other content */
+  }
+  
+  /* Style for the content on the cover */
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Text color */
+  }
+  
+  /* Style for the profile image */
+  .profile-image {
+    width: 150px; /* Adjust the size of your profile image */
+    height: 150px;
+    border-radius: 50%; /* Creates a circular profile image */
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  /* Style for the name */
+  h1 {
+    font-size: 36px;
+    margin: 20px 0;
+    color: #000;
+  }
+  
+  /* Style for the contact information */
+  p {
+    font-size: 18px;
+  }
+
+ #Ski {
+  position: relative;
+  color: #fff; /* Text color on top of the background image */
+  padding: 20px; /* Add padding to the section content for better readability */
+}
+
+/* Create a background effect using :before pseudo-element */
+#Ski:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('skill.jpg'); /* Replace 'background-image.jpg' with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; Optional - keeps the background fixed while scrolling */
+  z-index: -1; /* Places the background behind other content */
+}
+
+#Edu {
+    background-image: url('nwu.png'); /* Replace 'background-image.jpg' with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional - keeps the background fixed while scrolling */
+    color: #fff; /* Text color on top of the background image */
+    padding: 20px; /* Add padding to the section content for better readability */
+  }
+  
+  /* Style for the content within the section */
+  #Edu h2, #Edu dl {
+    background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background for better text readability */
+    padding: 20px; /* Add padding to the section content for better readability */
+  }
+  
